@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="Push press"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:text="Podaj swój rekord:"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <Button
+        android:id="@+id/p1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:text="60%"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/p2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/p2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:text="70%"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p1"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/p4"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:text="90%"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p3"
+        app:layout_constraintTop_toBottomOf="@+id/p2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="100dp"
+        android:text="Wybierz procent obciążenia:"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wpiszRekord1" />
+
+    <Button
+        android:id="@+id/p3"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:text="80%"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/p4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1" />
+
+    <TextView
+        android:id="@+id/wynik1"
+        android:layout_width="388dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Twój obecny ciężar zostanie wyliczony po wybraniu procentu"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p4" />
+
+    <Button
+        android:id="@+id/zapisz1"
+        android:layout_width="87dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="44dp"
+        android:text="zapisz"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/wpiszRekord1"
+        android:layout_width="151dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/zapisz1"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="44dp"
+        android:text="Switch"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zapisz1" />
+
+    <TextView
+        android:id="@+id/twojRekord1"
+        android:layout_width="145dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wpiszRekord1" />
+
+    <Button
+        android:id="@+id/YouTube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="295dp"
+        android:text="Sprawdź, jak wykonać ćwiczenie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

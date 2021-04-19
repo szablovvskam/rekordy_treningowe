@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example"
+    >
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dumbbell_with_weights_outline"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dumbbell_with_weights_outline"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WybierzCwiczenie" />
+        <activity android:name=".Deadlift" />
+        <activity android:name=".PushPress" />
+        <activity android:name=".StrictPress" />
+        <activity android:name=".FrontSquat" />
+        <activity android:name=".Clean" />
+        <activity android:name=".BackSquat" />
+        <activity android:name=".VideoPushPress"/>
+        <activity android:name=".VideoDeadlift"/>
+        <activity android:name=".VideoStrictPress"/>
+        <activity android:name=".VideoFrontSquat"/>
+        <activity android:name=".VideoClean"/>
+        <activity android:name=".VideoBackSquat"/>
+
+    </application>
+
+</manifest>

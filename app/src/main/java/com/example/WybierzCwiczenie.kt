@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.R
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.wybierz_cwiczenie.*
 
 class WybierzCwiczenie: AppCompatActivity() {
 
@@ -26,6 +28,12 @@ class WybierzCwiczenie: AppCompatActivity() {
 
         findViewById<Button>(R.id.backSquat).setOnClickListener { startActivity(Intent(this,BackSquat::class.java)) }
 
+//        logout.setOnClickListener{
+//            FirebaseAuth.getInstance().singOut()
+//
+//            startActivity(Intent(this, LoginActivity::class.java))
+//            finish()
+//        }
 
     }
 }

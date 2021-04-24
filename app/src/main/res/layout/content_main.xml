@@ -27,13 +27,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="221dp"
-        android:layout_height="202dp"
+        android:layout_width="185dp"
+        android:layout_height="180dp"
         android:layout_marginStart="96dp"
         android:layout_marginEnd="95dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="184dp"
         app:layout_constraintBottom_toTopOf="@+id/rozpocznij"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/dumbbell_with_weights_outline" />
 
@@ -46,11 +47,14 @@
         android:layout_marginEnd="183dp"
         android:layout_marginBottom="100dp"
         android:text="Cześć!"
-        android:textSize="30sp"
         android:textColor="#A13157"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
